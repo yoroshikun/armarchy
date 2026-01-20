@@ -41,11 +41,13 @@ if command -v systemd-detect-virt &>/dev/null; then
 
   # Detect VMware specifically
   if [[ "$virt_type" == "vmware" ]]; then
-    export OMARCHY_VMWARE=true
+    
     export OMARCHY_SKIP_LIMINE=true
   fi
 
+  export OMARCHY_VMWARE=true
   export OMARCHY_SKIP_LIMINE=true
+  export OMARCHY_VIRTUALIZATION=true
 
   # Enable software rendering for any VM except Parallels (which has good GPU virtualization)
   # Exception: Asahi is bare metal, don't enable software rendering
