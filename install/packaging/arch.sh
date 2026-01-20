@@ -72,11 +72,11 @@ if [ -n "$OMARCHY_ARM" ]; then
   source $OMARCHY_INSTALL/arm_install_scripts/wl-clip-persist.sh
 
   # Skip signal-desktop-beta if SKIP_SIGNAL_DESKTOP_BETA is set (for faster testing)
-  if [ -z "$SKIP_SIGNAL_DESKTOP_BETA" ]; then
+  #if [ -z "$SKIP_SIGNAL_DESKTOP_BETA" ]; then
     # signal-desktop-beta: Requires nodejs-lts-jod which conflicts with current nodejs
     # Custom installer handles the conflict by removing nodejs before installation
     # source $OMARCHY_INSTALL/arm_install_scripts/signal-desktop-beta.sh
-  fi
+  #fi
 
   # Post-install tasks for ARM packages
   # Update icon cache for yaru-icon-theme (needed on ARM)
