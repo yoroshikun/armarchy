@@ -46,8 +46,8 @@ if [ -n "$OMARCHY_ARM" ]; then
   # Run ARM-specific installation scripts
   echo "Running ARM-specific installation scripts..."
 
-  source $OMARCHY_INSTALL/arm_install_scripts/1password-app.sh
-  source $OMARCHY_INSTALL/arm_install_scripts/1password-cli.sh
+  # source $OMARCHY_INSTALL/arm_install_scripts/1password-app.sh
+  # source $OMARCHY_INSTALL/arm_install_scripts/1password-cli.sh
   source $OMARCHY_INSTALL/arm_install_scripts/asdcontrol-prebuilt.sh
 
   # Skip OBS Studio if SKIP_OBS is set (for faster testing)
@@ -55,8 +55,8 @@ if [ -n "$OMARCHY_ARM" ]; then
     source $OMARCHY_INSTALL/arm_install_scripts/obs-studio.sh
   fi
 
-  source $OMARCHY_INSTALL/arm_install_scripts/obsidian-appimage.sh # Required fuse2 package included in omarchy-arm-official.packages
-  source $OMARCHY_INSTALL/arm_install_scripts/omarchy-nvim.sh
+  # source $OMARCHY_INSTALL/arm_install_scripts/obsidian-appimage.sh # Required fuse2 package included in omarchy-arm-official.packages
+  # source $OMARCHY_INSTALL/arm_install_scripts/omarchy-nvim.sh
   source $OMARCHY_INSTALL/arm_install_scripts/tobi-try.sh
   if [ -z "$SKIP_GHOSTTY" ]; then
     source $OMARCHY_INSTALL/arm_install_scripts/ghostty.sh
@@ -75,7 +75,7 @@ if [ -n "$OMARCHY_ARM" ]; then
   if [ -z "$SKIP_SIGNAL_DESKTOP_BETA" ]; then
     # signal-desktop-beta: Requires nodejs-lts-jod which conflicts with current nodejs
     # Custom installer handles the conflict by removing nodejs before installation
-    source $OMARCHY_INSTALL/arm_install_scripts/signal-desktop-beta.sh
+    # source $OMARCHY_INSTALL/arm_install_scripts/signal-desktop-beta.sh
   fi
 
   # Post-install tasks for ARM packages

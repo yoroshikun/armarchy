@@ -17,8 +17,8 @@ pinta-git             # From arm_install_scripts/pinta.sh (using -git version fo
 wl-clip-persist       # From arm_install_scripts/wl-clip-persist.sh
 
 # 1Password (ARM versions)
-1password-beta        # From arm_install_scripts/1password-app.sh
-1password-cli         # From arm_install_scripts/1password-cli.sh
+# 1password-beta        # From arm_install_scripts/1password-app.sh
+# 1password-cli         # From arm_install_scripts/1password-cli.sh
 
 # Package management
 yay                   # AUR helper

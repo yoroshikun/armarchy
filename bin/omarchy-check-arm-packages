@@ -46,15 +46,15 @@ declare -A DIRECT_SUBSTITUTIONS=(
 
 # Custom installers: x86_package -> script_name (without .sh)
 declare -A CUSTOM_INSTALLERS=(
-  ["1password-beta"]="1password-app"
-  ["1password-cli"]="1password-cli"
+  # ["1password-beta"]="1password-app"
+  # ["1password-cli"]="1password-cli"
   ["asdcontrol"]="asdcontrol-prebuilt"
   ["ghostty"]="ghostty"
-  ["obs-studio"]="obs-studio"
-  ["obsidian"]="obsidian-appimage"
-  ["omarchy-nvim"]="omarchy-nvim"
+  # ["obs-studio"]="obs-studio"
+  # ["obsidian"]="obsidian-appimage"
+  # ["omarchy-nvim"]="omarchy-nvim"
   ["pinta"]="pinta"
-  ["signal-desktop"]="signal-desktop-beta"
+  # ["signal-desktop"]="signal-desktop-beta"
   ["tobi-try"]="tobi-try"
 )
 
