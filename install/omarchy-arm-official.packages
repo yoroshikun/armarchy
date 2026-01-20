@@ -11,4 +11,3 @@ pipewire-pulse        # PulseAudio compatibility layer for PipeWire
 wf-recorder           # Wayland screen recorder
 mise
 plymouth
-sddm
