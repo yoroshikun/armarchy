@@ -48,6 +48,7 @@ if command -v systemd-detect-virt &>/dev/null; then
   export OMARCHY_VMWARE=true
   export OMARCHY_SKIP_LIMINE=true
   export OMARCHY_VIRTUALIZATION=true
+  export SKIP_YARU=true
 
   # Enable software rendering for any VM except Parallels (which has good GPU virtualization)
   # Exception: Asahi is bare metal, don't enable software rendering
